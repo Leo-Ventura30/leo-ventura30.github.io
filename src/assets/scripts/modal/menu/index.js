@@ -16,6 +16,7 @@ function enable() {
 
   window.onscroll = function () {};
 }
+
 $(document).ready(() => {
   let btnClose = document.getElementById("close-menu");
   let menu = document.querySelector(".header-menu");
