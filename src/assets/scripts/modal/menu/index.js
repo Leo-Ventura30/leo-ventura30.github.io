@@ -22,11 +22,11 @@ $(document).ready(() => {
   let menu = document.querySelector(".header-menu");
   let menuIcon = document.querySelector(".menu-mobile li");
   $(menuIcon).click(() => {
-    disable();
     menu.classList.add("open");
+    disable();
   });
   $(btnClose).click(() => {
-    enable();
     menu.classList.remove("open");
+    enable();
   });
 });
