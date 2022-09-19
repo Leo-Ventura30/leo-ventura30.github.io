@@ -1,0 +1,977 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home - Maeztra Store</title>
+    <link
+      rel="shortcut icon"
+      href="./src/static/icons/favicon.ico"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="./src/assets/styles/styles.css" />
+    <script
+      src="https://code.jquery.com/jquery-3.6.1.min.js"
+      integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+      integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"
+      integrity="sha512-gY25nC63ddE0LcLPhxUJGFxa2GoIyA5FLym4UJqHDEMHjp8RET6Zn/SHo1sltt3WuVtqfyxECP38/daUc/WVEA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css"
+      integrity="sha512-UTNP5BXLIptsaj5WdKFrkFov94lDx+eBvbKyoe1YAfjeRPC+gT5kyZ10kOHCfNZqEui1sxmqvodNUx3KbuYI/A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css"
+      integrity="sha512-OTcub78R3msOCtY3Tc6FzeDJ8N9qvQn1Ph49ou13xgA9VsH9+LRxoFU6EqLhW4+PKRfU+/HReXmSZXHEkpYoOA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <script
+      type="text/javascript"
+      src="./src/assets/scripts/carousel/banner/index.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="./src/assets/scripts/carousel/partners/index.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="./src/assets/scripts/carousel/information/index.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="./src/assets/scripts/carousel/products/index.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="./src/assets/scripts/palet/index.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="./src/assets/scripts/modal/index.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="./src/assets/scripts/collapse/index.js"
+    ></script>
+  </head>
+  <body>
+    <header class="grid">
+      <div class="flex">
+        <p>Acompanhe as melhores promoções disponíveis aqui na Maeztra.</p>
+      </div>
+      <nav class="flex nav-mobile">
+        <ul>
+          <div class="menu-mobile">
+            <li>
+              <img src="./src/static/icons/icon-menu.svg" alt="" />
+            </li>
+          </div>
+          <div class="header-logo">
+            <li>
+              <a href="/">
+                <picture>
+                  <source
+                    srcset="./src/static/icons/icon-brand-maeztra-mobile.svg"
+                    media="(max-width:600px)"
+                  />
+                  <img
+                    src="./src/static/icons/icon-brand-maeztra.svg"
+                    alt="Logo Maeztra"
+                  />
+                </picture>
+              </a>
+            </li>
+          </div>
+          <div class="header-search">
+            <li>
+              <form action="#">
+                <div>
+                  <input
+                    type="search"
+                    name="search"
+                    id="search"
+                    placeholder="O Que Você Busca?"
+                  />
+                  <button type="submit">Buscar</button>
+                </div>
+              </form>
+            </li>
+          </div>
+
+          <div class="header-menu">
+            <li>
+              <div>
+                <img
+                  src="./src/static/icons/icon-user.svg"
+                  alt="Icone minha conta"
+                />
+              </div>
+              <div>
+                <a href="#">
+                  <p>Minha Conta</p>
+                </a>
+              </div>
+            </li>
+            <li>
+              <div>
+                <img
+                  src="./src/static/icons/icon-heart.svg"
+                  alt="Icone meus favoritos"
+                />
+              </div>
+              <div>
+                <a href="#">
+                  <p>Meus Favoritos</p>
+                </a>
+              </div>
+            </li>
+
+            <li>
+              <div>
+                <img
+                  src="./src/static/icons/icon-bag.svg"
+                  alt="Icone meu carrinho"
+                />
+              </div>
+              <div>
+                <a href="#">
+                  <p>Meu Carrinho</p>
+                </a>
+              </div>
+            </li>
+          </div>
+          <div class="header-menu-mobile">
+            <li>
+              <a href="#">
+                <img
+                  src="./src/static/icons/icon-search.svg"
+                  alt="Icone de pesquisa"
+                />
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img
+                  src="./src/static/icons/icon-shoppingbag.svg"
+                  alt="Icone meu carrinho"
+                />
+              </a>
+            </li>
+          </div>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="grid modal-newsletter open">
+      <div class="flex">
+        <div class="newsletter-container">
+          <span id="close-modal">
+            <button>fechar</button>
+          </span>
+          <div class="newsletter-content">
+            <div class="newsletter-image">
+              <img
+                src="./src/static/imgs/img-5.png"
+                alt="Imagem da newsletter"
+              />
+            </div>
+            <div>
+              <div>
+                <div>
+                  <img
+                    src="./src/static/icons/icon-email-newsletter.svg"
+                    alt="Icone de E-mail"
+                  />
+                  <p>Bem Vindo à MAEZTRA</p>
+                </div>
+                <div>
+                  <p>Receba em Primeira mão</p>
+                  <p>desconto e ofertas exclusivas</p>
+                </div>
+                <form action="#" method="post">
+                  <input
+                    type="text"
+                    name="email"
+                    id="email"
+                    placeholder="Digite seu e-mail"
+                  />
+                  <div>
+                    <button type="submit">enviar</button>
+                    <img
+                      src="./src/static/icons/icon-paper-plane.svg"
+                      alt="Icone de Enviar"
+                    />
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="grid section-navigation">
+      <div class="flex">
+        <ul>
+          <li>
+            <div>
+              <img
+                src="./src/static/icons/icon-dress.svg"
+                alt="Icone de vestido"
+              />
+            </div>
+            <div>
+              <a href="#"> <p>Novidades</p></a>
+            </div>
+          </li>
+          <li>
+            <a href="#"> <p>Vestidos</p></a>
+          </li>
+          <li>
+            <a href="#"> <p>Roupas</p></a>
+          </li>
+          <li>
+            <a href="#"> <p>Sapatos</p></a>
+          </li>
+          <li>
+            <a href="#"> <p>Lingerie</p></a>
+          </li>
+          <li>
+            <a href="#"> <p>Acessórios</p></a>
+          </li>
+          <li>
+            <a href="#"> <p>OUTLET</p></a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="grid section-banner">
+      <div class="owl-prev-banner">
+        <img src="./src/static/icons/icon-prev.svg" alt="Icone de anterior" />
+      </div>
+      <div class="flex owl-carousel-banner owl-carousel owl-theme owl-loaded">
+        <div class="owl-stage-outer">
+          <div class="owl-stage">
+            <div class="owl-item">
+              <div>
+                <picture>
+                  <source
+                    srcset="./src/static/imgs/img-1-mobile.png"
+                    media="(max-width:600px)"
+                  />
+                  <img
+                    src="./src/static/imgs/img-1.png"
+                    alt="Imagem de fundo"
+                  />
+                </picture>
+              </div>
+              <div class="banner-container">
+                <div class="banner-informations">
+                  <div>
+                    <h1>Promoções de Outono</h1>
+                  </div>
+                  <div>
+                    <p>
+                      Confiras os melhores looks para combinar com você nesse
+                      Outono
+                    </p>
+                  </div>
+                  <div>
+                    <button>Conferir</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="owl-item">
+              <div>
+                <picture>
+                  <source
+                    srcset="./src/static/imgs/img-1-mobile.png"
+                    media="(max-width:600px)"
+                  />
+                  <img
+                    src="./src/static/imgs/img-1.png"
+                    alt="Imagem de fundo"
+                  />
+                </picture>
+              </div>
+              <div class="banner-container">
+                <div class="banner-informations">
+                  <div>
+                    <h1>Black Friday</h1>
+                  </div>
+                  <div>
+                    <p>Confiras nossas promoções, na Black November</p>
+                  </div>
+                  <div>
+                    <button>Conferir</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="owl-item">
+              <div>
+                <picture>
+                  <source
+                    srcset="./src/static/imgs/img-1-mobile.png"
+                    media="(max-width:600px)"
+                  />
+                  <img
+                    src="./src/static/imgs/img-1.png"
+                    alt="Imagem de fundo"
+                  />
+                </picture>
+              </div>
+              <div class="banner-container">
+                <div class="banner-informations">
+                  <div>
+                    <h1>Promoções de Outono</h1>
+                  </div>
+                  <div>
+                    <p>
+                      Confiras os melhores looks para combinar com você nesse
+                      Outono
+                    </p>
+                  </div>
+                  <div>
+                    <button>Conferir</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="owl-item">
+              <div>
+                <picture>
+                  <source
+                    srcset="./src/static/imgs/img-1-mobile.png"
+                    media="(max-width:600px)"
+                  />
+                  <img
+                    src="./src/static/imgs/img-1.png"
+                    alt="Imagem de fundo"
+                  />
+                </picture>
+              </div>
+              <div class="banner-container">
+                <div class="banner-informations">
+                  <div>
+                    <h1>Black Friday</h1>
+                  </div>
+                  <div>
+                    <p>Confiras nossas promoções, na Black November</p>
+                  </div>
+                  <div>
+                    <button>Conferir</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="owl-item">
+              <div>
+                <picture>
+                  <source
+                    srcset="./src/static/imgs/img-1-mobile.png"
+                    media="(max-width:600px)"
+                  />
+                  <img
+                    src="./src/static/imgs/img-1.png"
+                    alt="Imagem de fundo"
+                  />
+                </picture>
+              </div>
+              <div class="banner-container">
+                <div class="banner-informations">
+                  <div>
+                    <h1>Promoções de Outono</h1>
+                  </div>
+                  <div>
+                    <p>
+                      Confiras os melhores looks para combinar com você nesse
+                      Outono
+                    </p>
+                  </div>
+                  <div>
+                    <button>Conferir</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="owl-next-banner">
+        <img src="./src/static/icons/icon-next.svg" alt="Icone de próximo" />
+      </div>
+    </section>
+
+    <section class="grid section-informations carrousel-container">
+      <div class="flex">
+        <p>Por que comprar na Maeztra?</p>
+      </div>
+      <div class="flex carrousel-content">
+        <ul class="owl-carousel-infos owl-carousel owl-theme owl-loaded">
+          <div class="owl-stage-outer">
+            <div class="owl-stage items">
+              <div class="owl-item">
+                <li>
+                  <div>
+                    <img
+                      src="./src/static/icons/icon-world.svg"
+                      alt="Icone de produtos importados"
+                    />
+                  </div>
+                  <div>
+                    <p>Produtos importados</p>
+                    <p>Produto de Alta Qualidade</p>
+                  </div>
+                </li>
+              </div>
+              <div class="owl-item">
+                <li>
+                  <div>
+                    <img
+                      src="./src/static/icons/icon-stock.svg"
+                      alt="Icone de estoque"
+                    />
+                  </div>
+                  <div>
+                    <p>Estoque no Brazil</p>
+                    <p>Produtos mais perto de você!</p>
+                  </div>
+                </li>
+              </div>
+              <div class="owl-item">
+                <li>
+                  <div>
+                    <img
+                      src="./src/static/icons/icon-package.svg"
+                      alt="Icone de garantia"
+                    />
+                  </div>
+                  <div>
+                    <p>Trocas Garantidas</p>
+                    <p>Trocas em até 48 horas, vejas as regras</p>
+                  </div>
+                </li>
+              </div>
+              <div class="owl-item">
+                <li>
+                  <div>
+                    <img
+                      src="./src/static/icons/icon-offer.svg"
+                      alt="Icone de oferta"
+                    />
+                  </div>
+                  <div>
+                    <p>Ganhe 5% off</p>
+                    <p>Pagando à vista no Cartão</p>
+                  </div>
+                </li>
+              </div>
+              <div class="owl-item">
+                <li>
+                  <div>
+                    <img
+                      src="./src/static/icons/icon-truck.svg"
+                      alt="Icone de frete gratis"
+                    />
+                  </div>
+                  <div>
+                    <p>Frete Grátis</p>
+                    <p>Em compras acima de R$ 499,00</p>
+                  </div>
+                </li>
+              </div>
+            </div>
+          </div>
+        </ul>
+      </div>
+    </section>
+
+    <section class="grid section-partners carrousel-container">
+      <div class="flex">
+        <h1>Marcas Parceiras</h1>
+      </div>
+      <div class="flex carrousel-content">
+        <ul class="owl-carousel-partners owl-carousel owl-theme owl-loaded">
+          <div class="owl-stage-outer">
+            <div class="owl-stage">
+              <li class="owl-item">
+                <a href="https://www.comma-store.eu/">
+                  <img
+                    src="./src/static/imgs/logo-comma.png"
+                    alt="Logo da marca Comma"
+                  />
+                </a>
+              </li>
+              <li class="owl-item">
+                <a href="https://www.melissa.com.br/">
+                  <img
+                    src="./src/static/imgs/logo-melissa.png"
+                    alt="Logo da marca Melissa"
+                  />
+                </a>
+              </li>
+              <li class="owl-item">
+                <a href="https://www.forever21.com/">
+                  <img
+                    src="./src/static/imgs/logo-forever.png"
+                    alt="Logo da marca Forever 21"
+                  />
+                </a>
+              </li>
+              <li class="owl-item">
+                <a href="https://www.zara.com/br/">
+                  <img
+                    src="./src/static/imgs/logo-zara.png"
+                    alt="Logo da marca Zara"
+                  />
+                </a>
+              </li>
+              <li class="owl-item">
+                <a href="https://www.anntaylor.com/">
+                  <img
+                    src="./src/static/imgs/logo-ann-taylor.png"
+                    alt="Logo da marca Ann Taylor"
+                  />
+                </a>
+              </li>
+            </div>
+          </div>
+        </ul>
+      </div>
+    </section>
+
+    <section class="grid section-products carrousel-container">
+      <div class="flex">
+        <h1>As Mais Pedidas</h1>
+      </div>
+      <div class="flex carrousel-products">
+        <div class="owl-prev-products">
+          <img src="./src/static/icons/icon-prev.svg" alt="Icone de anterior" />
+        </div>
+        <ul class="owl-carousel-products owl-carousel owl-theme owl-loaded">
+          <div class="owl-stage-outer">
+            <div class="owl-stage">
+              <li class="owl-item">
+                <div>
+                  <img
+                    src="./src/static/imgs/img-2.png"
+                    alt="Imagem do produto"
+                  />
+                </div>
+                <div class="product-info">
+                  <ul>
+                    <li class="brow-color active"></li>
+                    <li class="salmon-color"></li>
+                    <li class="blue-color"></li>
+                    <li class="purple-color"></li>
+                  </ul>
+                  <div>
+                    <div>
+                      <p>R$ 500,00</p>
+                      <p>Faux Suede Mini Skirt</p>
+                    </div>
+                    <div>
+                      <p>
+                        A faux suede mini skirt featuring exposed button-front
+                        closures and panel seam construction.
+                      </p>
+                    </div>
+
+                    <button>Adicionar</button>
+                  </div>
+                </div>
+              </li>
+              <li class="owl-item">
+                <div>
+                  <img
+                    src="./src/static/imgs/img-3.png"
+                    alt="Imagem do produto"
+                  />
+                </div>
+                <div class="product-info">
+                  <ul>
+                    <li class="black-color active"></li>
+                    <li class="wine-color"></li>
+                    <li class="beige-color"></li>
+                    <li class="grey-color"></li>
+                  </ul>
+                  <div>
+                    <div>
+                      <p>R$ 320,00</p>
+                      <p>Ruched Rose Print Mini Skirt</p>
+                    </div>
+                    <div>
+                      <p>
+                        A satin mini skirt featuring an allover floral print,
+                        ruched side with self-tie closure, concealed back
+                        zipper, and a flounce hem.
+                      </p>
+                    </div>
+
+                    <button>Adicionar</button>
+                  </div>
+                </div>
+              </li>
+              <li class="owl-item">
+                <div>
+                  <img
+                    src="./src/static/imgs/img-2.png"
+                    alt="Imagem do produto"
+                  />
+                </div>
+                <div class="product-info">
+                  <ul>
+                    <li class="brow-color active"></li>
+                    <li class="salmon-color"></li>
+                    <li class="blue-color"></li>
+                    <li class="purple-color"></li>
+                  </ul>
+                  <div>
+                    <div>
+                      <p>R$ 500,00</p>
+                      <p>Faux Suede Mini Skirt</p>
+                    </div>
+                    <div>
+                      <p>
+                        A faux suede mini skirt featuring exposed button-front
+                        closures and panel seam construction.
+                      </p>
+                    </div>
+
+                    <button>Adicionar</button>
+                  </div>
+                </div>
+              </li>
+              <li class="owl-item">
+                <div>
+                  <img
+                    src="./src/static/imgs/img-3.png"
+                    alt="Imagem do produto"
+                  />
+                </div>
+                <div class="product-info">
+                  <ul>
+                    <li class="black-color active"></li>
+                    <li class="wine-color"></li>
+                    <li class="beige-color"></li>
+                    <li class="grey-color"></li>
+                  </ul>
+                  <div>
+                    <div>
+                      <p>R$ 320,00</p>
+                      <p>Ruched Rose Print Mini Skirt</p>
+                    </div>
+                    <div>
+                      <p>
+                        A satin mini skirt featuring an allover floral print,
+                        ruched side with self-tie closure, concealed back
+                        zipper, and a flounce hem.
+                      </p>
+                    </div>
+
+                    <button>Adicionar</button>
+                  </div>
+                </div>
+              </li>
+              <li class="owl-item">
+                <div>
+                  <img
+                    src="./src/static/imgs/img-2.png"
+                    alt="Imagem do produto"
+                  />
+                </div>
+                <div class="product-info">
+                  <ul>
+                    <li class="brow-color active"></li>
+                    <li class="salmon-color"></li>
+                    <li class="blue-color"></li>
+                    <li class="purple-color"></li>
+                  </ul>
+                  <div>
+                    <div>
+                      <p>R$ 500,00</p>
+                      <p>Faux Suede Mini Skirt</p>
+                    </div>
+                    <div>
+                      <p>
+                        A faux suede mini skirt featuring exposed button-front
+                        closures and panel seam construction.
+                      </p>
+                    </div>
+
+                    <button>Adicionar</button>
+                  </div>
+                </div>
+              </li>
+            </div>
+          </div>
+        </ul>
+        <div class="owl-next-products">
+          <img src="./src/static/icons/icon-next.svg" alt="Icone de próximo" />
+        </div>
+      </div>
+    </section>
+
+    <section class="grid section-news">
+      <div class="flex">
+        <div class="news-container">
+          <div>
+            <div>
+              <h1>Lorem ipsum</h1>
+            </div>
+            <div>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Interdum mauris posuere fusce proin mattis. Hendrerit cras ut
+                nunc enim dictum. Mattis proin ut quis donec sed eget nulla. Vel
+                mi ut mauris integer. Nibh sagittis in lobortis sed cursus
+                condimentum velit pharetra. Amet luctus ut vulputate scelerisque
+                placerat consequat. Neque arcu mi iaculis id. Vel vitae,
+                pharetra, a nec tristique. Feugiat id tortor eu mauris pulvinar
+                velit massa. Ut ornare augue eget convallis volutpat aliquet.
+                Sed sed pellentesque porttitor phasellus donec condimentum sit
+                sapien.
+              </p>
+            </div>
+          </div>
+          <div>
+            <picture>
+              <source
+                srcset="./src/static/imgs/img-4-mobile.png"
+                media="(max-width:600px)"
+              />
+              <img
+                src="./src/static/imgs/img-4.png"
+                alt="Banner de novas informações"
+              />
+            </picture>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="grid section-newsletter">
+      <div class="flex">
+        <div>
+          <h1>Recebe Nossa Newsletter</h1>
+        </div>
+        <div class="newsletter-form">
+          <form action="#">
+            <div>
+              <input
+                type="search"
+                name="search"
+                id="search"
+                placeholder="Digite seu e-mail"
+              />
+              <button type="submit">Enviar</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <footer class="grid">
+      <div class="flex">
+        <div>
+          <ul class="collapse">
+            <li>
+              <p>Informações</p>
+              <img src="./src/static/icons/icon-plus.svg" alt="Icone de mais" />
+            </li>
+            <div>
+              <li>
+                <a href="#">
+                  <p>Quem Somos</p>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <p>Prazo de Envio</p>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <p>Trocas e Devoluções</p>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <p>Promoções e Cupons</p>
+                </a>
+              </li>
+            </div>
+          </ul>
+          <ul class="collapse">
+            <li>
+              <p>Minha Conta</p>
+              <img src="./src/static/icons/icon-plus.svg" alt="Icone de mais" />
+            </li>
+            <div>
+              <li>
+                <a href="#">
+                  <p>Minha Conta</p>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <p>Meus Pedidos</p>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <p>Cadastre-se</p>
+                </a>
+              </li>
+            </div>
+          </ul>
+          <ul class="collapse">
+            <li>
+              <p>Onde nos Encontrar</p>
+              <img src="./src/static/icons/icon-plus.svg" alt="Icone de mais" />
+            </li>
+            <div>
+              <li>
+                <a href="#">
+                  <p>Lojas</p>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <p>Endereço</p>
+                </a>
+              </li>
+            </div>
+          </ul>
+        </div>
+      </div>
+      <div class="flex">
+        <div class="icons-footer">
+          <ul>
+            <li>
+              <a href="https://pt-br.facebook.com/maeztraconsultoria/">
+                <img
+                  src="./src/static/icons/icon-facebook.svg"
+                  alt="Icone do Facebook"
+                />
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.linkedin.com/company/maeztra/?originalSubdomain=br"
+              >
+                <img
+                  src="./src/static/icons/icon-linkedin.svg"
+                  alt="Icone do LinkedIn"
+                />
+              </a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/maeztra_consultoria/">
+                <img
+                  src="./src/static/icons/icon-instagram.svg"
+                  alt="Icone do Instagram"
+                />
+              </a>
+            </li>
+            <li>
+              <a href="https://www.youtube.com/c/QuatrodigitalBr/featured">
+                <img
+                  src="./src/static/icons/icon-youtube.svg"
+                  alt="Icone do Youtube"
+                />
+              </a>
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <img
+                src="./src/static/icons/icon-visa.svg"
+                alt="Icone da bandeira Visa"
+              />
+            </li>
+            <li>
+              <img
+                src="./src/static/icons/icon-mastercard.svg"
+                alt="Icone da bandeira Mastercard"
+              />
+            </li>
+            <li>
+              <img
+                src="./src/static/icons/icon-visa.svg"
+                alt="Icone da bandeira Visa"
+              />
+            </li>
+            <li>
+              <img
+                src="./src/static/icons/icon-mastercard.svg"
+                alt="Icone da bandeira Mastercard"
+              />
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <div>
+                <p>Powered by</p>
+              </div>
+              <div>
+                <a href="https://vtex.com/br-pt/">
+                  <picture>
+                    <source
+                      srcset="./src/static/icons/icon-vtex-footer-mobile.svg"
+                      media="(max-width:600px)"
+                    />
+                    <img
+                      src="./src/static/icons/icon-vtex-footer.svg"
+                      alt="Icone da VTEX"
+                    />
+                  </picture>
+                </a>
+              </div>
+            </li>
+            <li>
+              <div>
+                <p>Developed by</p>
+              </div>
+              <div>
+                <a href="https://maeztra.com/">
+                  <picture>
+                    <source
+                      srcset="./src/static/icons/icon-maeztra-footer-mobile.svg"
+                      media="(max-width:600px)"
+                    />
+                    <img
+                      src="./src/static/icons/icon-maeztra-footer.svg"
+                      alt="Icone da Maeztra"
+                    />
+                  </picture>
+                </a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
